@@ -1,7 +1,7 @@
 const { MongoClient } = require('mongodb');
-const dns = require('dns');
 
 // Para versiones de Node 24.14.0 o superior
+const dns = require('dns');
 dns.setServers(['8.8.8.8']);
 
 const MONGO_URI = process.env.MONGO_URI || 'mongodb://localhost:27017';
